@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+li.completed {
+  color: gray;
+  font-style: italic;
+  background: #545454;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #282c34;
+  color: #fff;
+}
+
+ul {
+  width: 250px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #282c34;
+  border-radius: 3px;
+}
+
+ul li:hover {
+  background: #45474c;
+}
+
+ul li:not(:last-child) {
+  border-bottom: 1px solid #54565a;
+}
+
+input#todo-input {
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: 1px solid #282c34;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+button {
+  background: #33363e;
+  color: #fff;
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #060708;
+  padding: 5px 10px;
+  cursor: pointer;
 }
